@@ -1,12 +1,13 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
 
 android {
-    buildToolsVersion BUILD_TOOLS_VERSION
-    compileSdkVersion Integer.parseInt(COMPILE_SDK_VERSION)
+    buildToolsVersion '28.0.3'
+    compileSdkVersion 28
 
     defaultConfig {
-        minSdkVersion Integer.parseInt(MIN_SDK_VERSION)
-        targetSdkVersion Integer.parseInt(TARGET_SDK_VERSION)
+        minSdkVersion 19
+        targetSdkVersion 28
     }
 
     buildTypes {
@@ -15,8 +16,19 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    publish {
+        artifactId = 'StateLayout'
+        userOrg = 'z-p-j'
+        groupId = 'com.zpj.widget'
+        publishVersion = '1.0.0'
+        desc = 'A custom layout that can easily switch different states(like empty,error,progress,content) with animations.'
+        website = 'https://github.com/Z-P-J/StateLayout'
+        licences = ['Apache-2.0']
+    }
+
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
 }

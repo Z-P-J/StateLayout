@@ -1,5 +1,7 @@
 # StateLayout usage
 
+## 对原项目做了一些修改
+
 ## Demo
 
 ![sample](gif/stateLayout.gif)
@@ -19,7 +21,7 @@ allprojects {
 - second step
 
 ``` basic
-compile 'com.github.fingdo:stateLayout:1.0.4'
+implementation 'com.zpj.widget:StateLayout:1.0.0'
 ```
 
 [中文文档点这里](README-zh.md)
@@ -29,12 +31,12 @@ compile 'com.github.fingdo:stateLayout:1.0.4'
 Usage is consistent with `ScrollView`, allowing only one root layout
 
 ``` xml
-<com.fingdo.statelayout.StateLayout
+<com.zpj.widget.statelayout.StateLayout
         android:id="@+id/state_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <!-- 内容布局 one root view -->
-</com.fingdo.statelayout.StateLayout>
+</com.zpj.widget.statelayout.StateLayout>
 ```
 
 ### Styleable parameter
@@ -68,7 +70,7 @@ Usage is consistent with `ScrollView`, allowing only one root layout
 #### sample：
 
 ``` xml
-<com.fingdo.statelayout.StateLayout
+<com.zpj.widget.statelayout.StateLayout
     xmlns:sl="http://schemas.android.com/apk/res-auto"
     android:id="@+id/state_layout"
     android:layout_width="match_parent"
@@ -84,7 +86,7 @@ Usage is consistent with `ScrollView`, allowing only one root layout
     sl:noNetworkText="No Network"
     sl:timeOutImg="@drawable/ic_state_time_out"
     sl:timeOutText="Timeout">
-</com.fingdo.statelayout.StateLayout>
+</com.zpj.widget.statelayout.StateLayout>
 ```
 
 ### Code set icon and text (show before)

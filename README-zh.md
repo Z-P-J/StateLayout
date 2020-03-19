@@ -18,7 +18,7 @@ allprojects {
 第二步，依赖此库
 
 ``` basic
-compile 'com.github.fingdo:stateLayout:1.0.4'
+implementation 'com.zpj.widget:StateLayout:1.0.0'
 ```
 
 ### 引入布局
@@ -26,12 +26,12 @@ compile 'com.github.fingdo:stateLayout:1.0.4'
 用法与ScrollView一致，只允许一个`根布局`
 
 ``` xml
-<com.fingdo.statelayout.StateLayout
+<com.zpj.widget.statelayout.StateLayout
         android:id="@+id/state_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <!-- 内容布局 one root view -->
-</com.fingdo.statelayout.StateLayout>
+</com.zpj.widget.statelayout.StateLayout>
 ```
 
 ### 布局设置图标和文字
@@ -65,7 +65,7 @@ compile 'com.github.fingdo:stateLayout:1.0.4'
 #### 示例：
 
 ``` xml
-<com.fingdo.statelayout.StateLayout
+<com.zpj.widget.statelayout.StateLayout
     xmlns:sl="http://schemas.android.com/apk/res-auto"
     android:id="@+id/state_layout"
     android:layout_width="match_parent"
@@ -81,7 +81,7 @@ compile 'com.github.fingdo:stateLayout:1.0.4'
     sl:noNetworkText="没有网络提示文字"
     sl:timeOutImg="@drawable/ic_state_time_out"
     sl:timeOutText="超时提示文字">
-</com.fingdo.statelayout.StateLayout>
+</com.zpj.widget.statelayout.StateLayout>
 ```
 
 ### 代码提前设置图标和文字
