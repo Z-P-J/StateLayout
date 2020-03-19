@@ -4,7 +4,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.fingdo.statelayout.R;
+import com.zpj.widget.statelayout.R;
 
 public class NoNetworkViewHolder extends BaseHolder {
 

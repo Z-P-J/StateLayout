@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ProgressBar;
 
-import com.fingdo.statelayout.R;
+import com.zpj.widget.statelayout.R;
 import com.zpj.widget.statelayout.StateLayout;
 import com.zpj.widget.statelayout.bean.EmptyItem;
 import com.zpj.widget.statelayout.bean.ErrorItem;

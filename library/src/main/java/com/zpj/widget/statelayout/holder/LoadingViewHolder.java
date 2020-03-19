@@ -4,7 +4,7 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
-import com.fingdo.statelayout.R;
+import com.zpj.widget.statelayout.R;
 
 public class LoadingViewHolder extends BaseHolder {
 

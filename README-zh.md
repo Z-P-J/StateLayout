@@ -18,7 +18,7 @@ allprojects {
 第二步，依赖此库
 
 ``` basic
-implementation 'com.zpj.widget:StateLayout:1.0.0'
+implementation 'com.zpj.widget:StateLayout:1.0.1'
 ```
 
 ### 引入布局
