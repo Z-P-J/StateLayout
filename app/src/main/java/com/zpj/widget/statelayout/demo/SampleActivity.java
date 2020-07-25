@@ -109,7 +109,7 @@ public class SampleActivity extends AppCompatActivity implements View.OnClickLis
 //                stateLayout.setTipImg(StateLayout.ERROR, R.mipmap.ic_launcher);
                 break;
             case R.id.btn_error:
-                stateLayout.showErrorView();
+                stateLayout.showErrorView("111111111111111111111111111111111111111111111111111111111111111111111111111111111111");
 //                stateLayout.setTipText(StateLayout.LOADING, "12345");
                 break;
             case R.id.btn_loading:

@@ -3,8 +3,8 @@
 
     <dimen name="layout_margin">8dp</dimen>
 
-    <dimen name="text_tip">16sp</dimen>
+    <dimen name="text_tip">14sp</dimen>
 
-    <dimen name="retry_tip">13sp</dimen>
+    <dimen name="retry_tip">12sp</dimen>
 
 </resources>

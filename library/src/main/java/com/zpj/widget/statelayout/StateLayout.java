@@ -646,19 +646,19 @@ public class StateLayout extends FrameLayout {
     public void setTipImg(int type, Drawable drawable) {
         switch (type) {
             case ERROR:
-                ((ErrorViewHolder) errorView.getTag()).ivImg.setBackgroundDrawable(drawable);
+                ((ErrorViewHolder) errorView.getTag()).ivImg.setBackground(drawable);
                 break;
             case EMPTY:
-                ((EmptyViewHolder) emptyView.getTag()).ivImg.setBackgroundDrawable(drawable);
+                ((EmptyViewHolder) emptyView.getTag()).ivImg.setBackground(drawable);
                 break;
             case TIMEOUT:
-                ((TimeOutViewHolder) timeOutView.getTag()).ivImg.setBackgroundDrawable(drawable);
+                ((TimeOutViewHolder) timeOutView.getTag()).ivImg.setBackground(drawable);
                 break;
             case NOT_NETWORK:
-                ((NoNetworkViewHolder) notNetworkView.getTag()).ivImg.setBackgroundDrawable(drawable);
+                ((NoNetworkViewHolder) notNetworkView.getTag()).ivImg.setBackground(drawable);
                 break;
             case LOGIN:
-                ((LoginViewHolder) loginView.getTag()).ivImg.setBackgroundDrawable(drawable);
+                ((LoginViewHolder) loginView.getTag()).ivImg.setBackground(drawable);
                 break;
         }
     }

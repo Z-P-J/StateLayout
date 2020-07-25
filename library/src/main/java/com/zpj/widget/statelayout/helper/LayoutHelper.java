@@ -6,6 +6,7 @@ import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ProgressBar;
 
 import com.zpj.widget.statelayout.R;
@@ -152,6 +153,9 @@ public class LayoutHelper {
             view.setTag(holder);
 
             ProgressBar progressBar = new ProgressBar(view.getContext());
+
+            int size = dp2pxInt(view.getContext(), 36);
+            progressBar.setLayoutParams(new ViewGroup.LayoutParams(size, size));
             holder.frameLayout.addView(progressBar);
 
             if (!TextUtils.isEmpty(item.getTip())) {
@@ -248,6 +252,21 @@ public class LayoutHelper {
             });
         }
         return view;
+    }
+
+    public static int dp2pxInt(Context context, float dp) {
+        return (int) (dp2px(context, dp) + 0.5f);
+    }
+
+    public static float dp2px(Context context, float dp) {
+        if (context == null) {
+            return -1;
+        }
+        return dp * density(context);
+    }
+
+    public static float density(Context context) {
+        return context.getResources().getDisplayMetrics().density;
     }
 
 }

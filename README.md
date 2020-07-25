@@ -21,7 +21,7 @@ allprojects {
 - second step
 
 ``` basic
-implementation 'com.zpj.widget:StateLayout:1.0.1'
+implementation 'com.zpj.widget:StateLayout:1.0.2'
 ```
 
 [中文文档点这里](README-zh.md)

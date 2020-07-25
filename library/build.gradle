@@ -21,7 +21,7 @@ android {
         artifactId = 'StateLayout'
         userOrg = 'z-p-j'
         groupId = 'com.zpj.widget'
-        publishVersion = '1.0.1'
+        publishVersion = '1.0.2'
         desc = 'A custom layout that can easily switch different states(like empty,error,progress,content) with animations.'
         website = 'https://github.com/Z-P-J/StateLayout'
         licences = ['Apache-2.0']
@@ -31,4 +31,5 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+//    implementation 'com.zpj.utils:ZUtils:1.0.2'
 }
